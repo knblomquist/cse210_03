@@ -28,10 +28,10 @@ namespace Word.Game
             }
         }
 
-        public bool CompareGuess(string letter)
+        public bool UpdateWord(string letter)
         {
             // Compare letter to secretWord
-            // If letter is in secretWord, replace the dash with the letter
+            // If letter is in secretWord, replace the underscore with the letter
             bool letterGuessed = false;
             for (int i = 0; i < secretWord.Length; i++)
             {

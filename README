@@ -12,7 +12,7 @@ Classes:
 - Director
 - Jumper
 - Word
-- 
+- Word factory
 
 ASCII ART
 Guess a letter [a-z]:

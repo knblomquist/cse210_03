@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Director.Game;
+
+namespace cse210_03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Director director = new Director();
+            director.StartGame();
+        }
+    }
+}

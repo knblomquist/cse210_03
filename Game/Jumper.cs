@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace cse210_03.Game
 {
-    
+///class///    
     public class Jumper
     {
         private List<string> player = new List<string>[ "   ___ ", 

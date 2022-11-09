@@ -27,7 +27,7 @@ namespace Word.Game
             }
         }
 
-        private bool IsLetterGuessed(string letter)
+        private bool UpdateWord(string letter)
         {
             // Compare letter to secretWord
             // If letter is in secretWord, replace the underscore with the letter
@@ -36,24 +36,13 @@ namespace Word.Game
             {
                 if (letter == secretWord[i].ToString())
                 {
+                    letterList[i] = letter[0];
                     letterGuessed = true;
                 }
             }
             return letterGuessed;
         }
 
-        public void UpdateWord(string letter)
-        {
-            // Compare letter to secretWord
-            // If letter is in secretWord, replace the underscore with the letter
-            for (int i = 0; i < secretWord.Length; i++)
-            {
-                if (letter == secretWord[i].ToString())
-                {
-                    letterList[i] = letter[0];
-                }
-            }
-        }
         public bool IsWordGuessed()
         {
             // Check if the word has been guessed

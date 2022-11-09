@@ -18,7 +18,7 @@ namespace Director.Game
             Console.WriteLine("Be careful, the more letters you get wrong the closer you get to a untimely de...");
             Console.WriteLine("Good luck!");
             Console.WriteLine(player.toString());
-            Console.WriteLine(word.toString());
+            Console.WriteLine(word.DisplayWord());
 
 
         }
@@ -43,7 +43,7 @@ namespace Director.Game
             Console.WriteLine("What letter will you guess? ");
             string guess = Console.ReadLine();
 
-            _correctGuess = word.compareGuess(guess);
+            _correctGuess = word.UpdateWord(guess);
         }
 
         public void DoUpdates()

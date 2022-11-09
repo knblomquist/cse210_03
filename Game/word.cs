@@ -27,16 +27,16 @@ namespace Word.Game
             }
         }
 
-        private bool UpdateWord(string letter)
+        private bool UpdateWord(char letter)
         {
             // Compare letter to secretWord
             // If letter is in secretWord, replace the underscore with the letter
             bool letterGuessed = false;
             for (int i = 0; i < secretWord.Length; i++)
             {
-                if (letter == secretWord[i].ToString())
+                if (letter.ToString() == secretWord[i].ToString())
                 {
-                    letterList[i] = letter[0];
+                    letterList[i] = letter;
                     letterGuessed = true;
                 }
             }

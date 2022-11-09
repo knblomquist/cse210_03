@@ -57,7 +57,7 @@ namespace cse210_03.Game
 
         public void DoOutputs()
         {
-            Console.WriteLine(player.toString());
+            player.toString();
             secretWord.DisplayWord();
         }
     }

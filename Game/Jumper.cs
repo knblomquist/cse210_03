@@ -7,12 +7,12 @@ namespace cse210_03.Game
     public class Jumper
     {
         private List<string> player = new List<string>[ "   ___ ", 
-                                            "  /___\\",
-                                            "  \\   /",                                            \ /
-                                            "    o  ",
-                                            "   /|\\",
-                                            "   / \\ ",
-                                            "^^^^^^^^^"];
+                                                        "  /___\\",
+                                                        "  \\   /",                                            \ /
+                                                        "    o  ",
+                                                        "   /|\\",
+                                                        "   / \\ ",
+                                                        "^^^^^^^^^"];
 
         private int leftStart;
 
@@ -29,7 +29,7 @@ namespace cse210_03.Game
         {
            for(int i = leftStart; leftStart <player.Count; i++)
            {
-
+                Console.WriteLine(player[i]);
            }
         }
     }

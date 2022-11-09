@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Word.Game
+namespace cse210_03.Game
 {
     public class Word
     {   

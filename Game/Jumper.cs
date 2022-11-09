@@ -14,6 +14,22 @@ namespace cse210_03.Game
                                             "   / \\ ",
                                             "^^^^^^^^^"];
 
-        
+        private int leftStart = 0;
+
+        public Jumper()
+        {
+
+        }
+
+        public void removeLine()
+        {
+            leftStart += 1;
+        }
+        public void toString()
+        {
+            while(leftStart < player.Count){
+                
+            }
+        }
     }
 }

@@ -27,7 +27,11 @@ namespace Word.Game
             }
         }
 
+<<<<<<< HEAD
         private bool UpdateWord(char letter)
+=======
+        public bool UpdateWord(string letter)
+>>>>>>> b21670f70cc095a71b62824ab1308ffdae848ed4
         {
             // Compare letter to secretWord
             // If letter is in secretWord, replace the underscore with the letter

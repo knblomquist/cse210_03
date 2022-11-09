@@ -1,11 +1,12 @@
 using System;
+using System.Collections.Generic;
 
 namespace cse210_03.Game
 {
     public class Director
     {
-        private Jumper player = new Jumper;
-        private word secretWord = new word;
+        private Jumper player = new Jumper();
+        private Word secretWord = new Word();
         private bool _isPlaying = true;
         private bool _correctGuess = false;
 
@@ -18,7 +19,7 @@ namespace cse210_03.Game
             Console.WriteLine("Be careful, the more letters you get wrong the closer you get to a untimely de...");
             Console.WriteLine("Good luck!");
             Console.WriteLine(player.toString());
-            Console.WriteLine(secretWord.DisplayWord());
+            secretWord.DisplayWord();
 
 
         }
@@ -41,9 +42,9 @@ namespace cse210_03.Game
             
 
             Console.WriteLine("What letter will you guess? ");
-            string guess = Console.ReadLine();
+            String charGuess = Console.ReadLine();
 
-            _correctGuess = secretWord.UpdateWord(guess);
+            _correctGuess = secretWord.UpdateWord(charGuess[0]);
         }
 
         public void DoUpdates()
@@ -57,7 +58,7 @@ namespace cse210_03.Game
         public void DoOutputs()
         {
             Console.WriteLine(player.toString());
-            Console.WriteLine(secretWord.DisplayString());
+            secretWord.DisplayWord();
         }
     }
 }

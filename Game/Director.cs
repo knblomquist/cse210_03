@@ -18,7 +18,7 @@ namespace cse210_03.Game
             Console.WriteLine("Guess the hidden word one letter at a time!");
             Console.WriteLine("Be careful, the more letters you get wrong the closer you get to a untimely de...");
             Console.WriteLine("Good luck!");
-            Console.WriteLine(player.toString());
+            player.toString();
             secretWord.DisplayWord();
 
 

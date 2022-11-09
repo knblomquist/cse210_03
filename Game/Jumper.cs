@@ -14,11 +14,11 @@ namespace cse210_03.Game
                                             "   / \\ ",
                                             "^^^^^^^^^"];
 
-        private int leftStart = 0;
+        private int leftStart;
 
         public Jumper()
         {
-
+            leftStart = 0;
         }
 
         public void removeLine()
@@ -27,9 +27,10 @@ namespace cse210_03.Game
         }
         public void toString()
         {
-            while(leftStart < player.Count){
-                
-            }
+           for(int i = leftStart; leftStart <player.Count; i++)
+           {
+
+           }
         }
     }
 }

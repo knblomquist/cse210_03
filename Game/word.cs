@@ -7,6 +7,10 @@ namespace cse210_03.Game
     {   
         private string secretWord;
         private List<char> letterList = new List<char>();
+
+        public Word(){
+            
+        }
         
         public void EncodeWord(string randomWord)
         {

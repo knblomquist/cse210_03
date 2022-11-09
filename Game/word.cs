@@ -27,7 +27,7 @@ namespace Word.Game
             }
         }
 
-        private bool UpdateWord(string letter)
+        public bool UpdateWord(string letter)
         {
             // Compare letter to secretWord
             // If letter is in secretWord, replace the underscore with the letter

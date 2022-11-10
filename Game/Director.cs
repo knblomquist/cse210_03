@@ -77,7 +77,7 @@ namespace cse210_03.Game
             {
                 player.toString();
                 Console.WriteLine("\nwhoops, flextape wont fix that");
-                Console.WriteLine("The word was " + secretWord.getSecretWord(00));
+                Console.WriteLine("The word was " + secretWord.GetSecretWord());
             }
         }
     }

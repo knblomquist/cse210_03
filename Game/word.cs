@@ -20,7 +20,7 @@ namespace cse210_03.Game
             }
         }
         
-        public GetSecretWord()
+        public string GetSecretWord()
         {
             return secretWord;
         }

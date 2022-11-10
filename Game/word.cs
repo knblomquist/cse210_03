@@ -44,7 +44,7 @@ namespace cse210_03.Game
             {
                 if (letter.ToString().ToLower() == secretWord[i].ToString().ToLower())
                 {
-                    letterList[i] = letter;
+                    letterList[i] = secretWord[i];
                     letterGuessed = true;
                 }
 

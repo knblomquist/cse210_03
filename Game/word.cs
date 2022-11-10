@@ -38,7 +38,7 @@ namespace cse210_03.Game
             bool letterGuessed = false;
             for (int i = 0; i < secretWord.Length; i++)
             {
-                if (letter.ToString() == secretWord[i].ToString())
+                if (letter.ToString().ToLower() == secretWord[i].ToString().ToLower())
                 {
                     letterList[i] = letter;
                     letterGuessed = true;

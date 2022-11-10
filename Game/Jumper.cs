@@ -6,13 +6,14 @@ namespace cse210_03.Game
 ///class///    
     public class Jumper
     {
-        private List<string> player = new List<string>{ "   ___ ", 
-                                                        "  /___\\",
-                                                        "  \\   /",                                            \ /
-                                                        "    o  ",
-                                                        "   /|\\",
-                                                        "   / \\ ",
-                                                        "^^^^^^^^^"};
+        private List<string> player = new List<string>{ 
+            "   ___ ", 
+            "  /___\\",
+            "  \\   /",
+            "    o  ",
+            "   /|\\",
+            "   / \\ ",
+            "^^^^^^^^^"};
 
         private int leftStart;
 

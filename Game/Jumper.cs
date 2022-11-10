@@ -13,7 +13,8 @@ namespace cse210_03.Game
             "    o  ",
             "   /|\\",
             "   / \\ ",
-            "^^^^^^^^^"};
+            "^^^^^^^^^"
+            };
 
         private int leftStart;
 

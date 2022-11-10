@@ -22,13 +22,23 @@ namespace cse210_03.Game
             leftStart = 0;
         }
 
-        public void removeLine()
+        public bool removeLine()
         {
             leftStart += 1;
+            
+            if(leftStart >= 3)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+            
         }
         public void toString()
         {
-           for(int i = leftStart; leftStart <player.Count; i++)
+           for(int i = leftStart; i <player.Count; i++)
            {
                 Console.WriteLine(player[i]);
            }

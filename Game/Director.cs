@@ -51,14 +51,32 @@ namespace cse210_03.Game
         {
             if(!_correctGuess)
             {
-                player.removeLine();
+                _isPlaying = player.removeLine();
+            }
+            else
+            {
+                if(secretWord.IsWordGuessed()){
+                    _isPlaying = false;
+                }
             }
         }
 
         public void DoOutputs()
         {
-            player.toString();
-            secretWord.DisplayWord();
+            if(_isPlaying)
+            {
+                player.toString();
+                secretWord.DisplayWord();
+            }
+            else if(!_isPlaying && _correctGuess)
+            {
+                Console.WriteLine("\ncongradulations, you survived");
+            }
+            else if(!_isPlaying && !_correctGuess)
+            {
+                player.toString();
+                Console.WriteLine("\nwhoops, flextape wont fix that");
+            }
         }
     }
 }

@@ -8,20 +8,18 @@ namespace cse210_03.Game
         private string secretWord;
         private List<char> letterList = new List<char>();
 
+        private WordFactory factory = new WordFactory();
+
         public Word(){
-            
-        }
-        
-        public void EncodeWord(string randomWord)
-        {
+            string randomWord = factory.RandomWord();
             secretWord = randomWord;
             // convert the secret word to underscores
             for (int i = 0; i < secretWord.Length; i++)
             {
                 letterList.Add('_');
             }
-
         }
+        
 
         public void DisplayWord()
         {   

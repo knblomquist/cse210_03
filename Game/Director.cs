@@ -70,12 +70,14 @@ namespace cse210_03.Game
             }
             else if(!_isPlaying && _correctGuess)
             {
+                secretWord.DisplayWord();
                 Console.WriteLine("\ncongradulations, you survived");
             }
             else if(!_isPlaying && !_correctGuess)
             {
                 player.toString();
                 Console.WriteLine("\nwhoops, flextape wont fix that");
+                Console.WriteLine("The word was " + secretWord.getSecretWord(00));
             }
         }
     }

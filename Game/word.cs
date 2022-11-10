@@ -20,6 +20,10 @@ namespace cse210_03.Game
             }
         }
         
+        public GetSecretWord()
+        {
+            return secretWord;
+        }
 
         public void DisplayWord()
         {   
@@ -43,6 +47,7 @@ namespace cse210_03.Game
                     letterList[i] = letter;
                     letterGuessed = true;
                 }
+
             }
             return letterGuessed;
         }

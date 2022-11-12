@@ -37,7 +37,7 @@ namespace cse210_03.Game
             }
         }
 
-        public void GetInputs()
+        private void GetInputs()
         {
             
 
@@ -47,7 +47,7 @@ namespace cse210_03.Game
             _correctGuess = secretWord.UpdateWord(charGuess[0]);
         }
 
-        public void DoUpdates()
+        private void DoUpdates()
         {
             if(!_correctGuess)
             {
@@ -61,7 +61,7 @@ namespace cse210_03.Game
             }
         }
 
-        public void DoOutputs()
+        private void DoOutputs()
         {
             if(_isPlaying)
             {
